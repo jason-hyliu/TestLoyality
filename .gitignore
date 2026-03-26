@@ -1,0 +1,42 @@
+# SQLite database
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Flask / Migrations (auto-generated)
+instance/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / npm (used only for vendoring Bootstrap, not needed in repo)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

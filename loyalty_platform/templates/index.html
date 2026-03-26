@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LoyaltyHub — Loyalty Platform</title>
+  <link href="/vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/vendor/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="d-flex" id="wrapper">
+  <nav id="sidebar" class="bg-dark text-white d-flex flex-column p-3">
+    <div class="sidebar-brand mb-4">
+      <i class="bi bi-award-fill text-warning fs-3"></i>
+      <span class="ms-2 fw-bold fs-5">LoyaltyHub</span>
+    </div>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white active" data-page="dashboard">
+          <i class="bi bi-speedometer2 me-2"></i>Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="members">
+          <i class="bi bi-people me-2"></i>Members
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="tiers">
+          <i class="bi bi-layers me-2"></i>Tiers
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="activities">
+          <i class="bi bi-lightning me-2"></i>Activities
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="rewards">
+          <i class="bi bi-gift me-2"></i>Rewards
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="campaigns">
+          <i class="bi bi-megaphone me-2"></i>Campaigns
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-page="transactions">
+          <i class="bi bi-clock-history me-2"></i>Transactions
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="page-content" class="flex-grow-1">
+    <!-- Top bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4">
+      <button class="btn btn-sm btn-outline-secondary me-3" id="sidebarToggle">
+        <i class="bi bi-list"></i>
+      </button>
+      <span class="navbar-brand mb-0 h1" id="page-title">Dashboard</span>
+      <div class="ms-auto">
+        <span class="badge bg-success">
+          <i class="bi bi-circle-fill me-1" style="font-size:8px"></i>Live
+        </span>
+      </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container-fluid py-4 px-4" id="main-content">
+      <!-- Loaded by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+  <div id="toast" class="toast align-items-center text-white border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body" id="toast-body"></div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mainModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/vendor/bootstrap.bundle.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
